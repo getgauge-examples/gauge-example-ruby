@@ -15,10 +15,8 @@ GAUGE_DOWNLOAD_URL="https://github.com/getgauge/gauge/releases/download/v$GAUGE_
 
 wget $GAUGE_DOWNLOAD_URL
 
-OUTPUT_DIR="./gauge_$GAUGE_LATEST_VERSION"
+OUTPUT_DIR="/tmp/gauge_$GAUGE_LATEST_VERSION"
 
 unzip $GAUGE_FILE_NAME -d $OUTPUT_DIR
 
-cd $OUTPUT_DIR
-
-/bin/bash install.sh
+/bin/bash "$OUTPUT_DIR/install.sh"
