@@ -21,4 +21,4 @@ unzip $GAUGE_FILE_NAME -d $OUTPUT_DIR
 
 cd $OUTPUT_DIR
 
-`./install.sh`
+/bin/bash install.sh
