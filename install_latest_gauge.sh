@@ -13,7 +13,7 @@ fi
 
 GAUGE_DOWNLOAD_URL="https://github.com/getgauge/gauge/releases/download/v$GAUGE_LATEST_VERSION/$GAUGE_FILE_NAME"
 
-wget GAUGE_DOWNLOAD_URL
+wget $GAUGE_DOWNLOAD_URL
 
 OUTPUT_DIR="./gauge_$GAUGE_LATEST_VERSION"
 
