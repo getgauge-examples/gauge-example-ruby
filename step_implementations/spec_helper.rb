@@ -1,6 +1,6 @@
 require 'test/unit'
 
-Dir[File.join(File.dirname(__FILE__), './pages/*.rb')].sort.each {|file| p file;require file }
+Dir[File.join(File.dirname(__FILE__), './pages/*.rb')].sort.each {|file| require file }
 
 
 # Define your helpers...
