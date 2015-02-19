@@ -1,3 +1,5 @@
+require 'capypage'
+
 module GaugeRubyExample
 	module Pages
 		class BasePage < ::Capypage::Page
