@@ -1,6 +1,6 @@
 require 'test/unit'
-
-Dir[File.join(File.dirname(__FILE__), './pages/*.rb')].sort.each {|file| require file }
+require_relative "./pages/base_page.rb"
+Dir[File.join(File.dirname(__FILE__), './pages/*.rb')].each {|file| require file }
 
 
 # Define your helpers...
