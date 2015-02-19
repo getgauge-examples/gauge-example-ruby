@@ -1,5 +1,11 @@
 # Gauge example project, in Ruby
 
+[![Build Status](https://snap-ci.com/getgauge/gauge-example-ruby/branch/master/build_image)](https://snap-ci.com/getgauge/gauge-example-ruby/branch/master)
+
+###Last Run Reports (Powered by [Snap CI](https://snap-ci.com/))
+- [Console](https://gauge-reports-ruby.herokuapp.com/console)
+- [Html](https://gauge-reports-ruby.herokuapp.com/)
+
 This project serves as an example for writing Automation using [Gauge](https://github.com/getgauge/gauge)
 
 This project uses 
@@ -7,6 +13,7 @@ This project uses
 - [Capypage](https://github.com/TWChennai/capypage), that gives you neat helpers to define your Page Objects.
 - Capybara, as a dependency of Capypage
 - Test::Unit for assertions
+- Snap CI has been setup to run the Gauge Specs from this project.
 
 # Concepts covered
 
