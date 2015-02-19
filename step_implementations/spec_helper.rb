@@ -1,7 +1,7 @@
 require 'capypage'
 require 'test/unit'
 
-Dir[File.join(File.dirname(__FILE__), 'step_implementations/pages/*.rb')].each {|file| require file }
+Dir[File.join(File.dirname(__FILE__), './pages/*.rb')].each {|file| require file }
 
 
 # Define your helpers...
