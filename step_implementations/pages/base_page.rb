@@ -1,4 +1,5 @@
 require 'capypage'
+require 'test/unit'
 
 module GaugeRubyExample
 	module Pages

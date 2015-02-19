@@ -1,4 +1,3 @@
-require 'test/unit'
 require_relative "./pages/base_page.rb"
 Dir[File.join(File.dirname(__FILE__), './pages/*.rb')].each {|file| require file }
 
