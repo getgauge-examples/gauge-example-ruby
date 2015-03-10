@@ -17,4 +17,4 @@ Verify a bunch of customers
 ---------------------------
 
 Can use a csv datasource!
-Search for customers <table:user.csv>
+* Search for customers <table:user.csv>
