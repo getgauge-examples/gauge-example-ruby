@@ -40,6 +40,11 @@ This project uses
 # Executing specs
 
 ### Set up
+This project requires bundler to install dependencies, bundler can be installed by running
+````
+gem install bundler
+````
+To install dependencies run : 
 ````
 bundle install
 ````
