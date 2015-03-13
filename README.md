@@ -26,8 +26,29 @@ This project uses
 
 # Prerequisites
 - [Install Gauge](http://getgauge.io/download.html)
-- [Install Gauge-Ruby plugin](http://getgauge.io/documentation/user/current/plugins/installation.html)
-- Chromedriver, for Capybara to interact with Chrome. Make sure that the Chromedriver binary is available in your PATH.
+  - Homebrew on Mac OS X :  
+      ```
+      brew install gauge
+      ```
+  - [Download Installer](http://getgauge.io/download.html)
+- [Install Gauge-Ruby plugin](http://getgauge.io/documentation/user/current/plugins/installation.html) by running<br>
+  ```
+  gauge --install ruby
+  ```
+- Chromedriver, for Capybara to interact with Chrome. Make sure that the [Chrome driver executable](https://sites.google.com/a/chromium.org/chromedriver/downloads) is available in your PATH.
+
+# Executing specs
+
+### Set up
+````
+bundle install
+````
+
+### All specs
+````
+bundle exec gauge specs
+````
+This will also compile all the supporting code implementations.
 
 # Copyright
 Copyright 2015, ThoughtWorks Inc.
