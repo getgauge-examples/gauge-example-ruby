@@ -6,7 +6,7 @@ module GaugeRubyExample
 		class BasePage < ::Capypage::Page
 			include Test::Unit::Assertions
 
-			URL = "http://localhost:8080/admin/"
+			URL = ENV["APP_ENDPOINT"]
 		end
 	end
 end
