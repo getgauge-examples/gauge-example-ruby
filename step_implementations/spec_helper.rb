@@ -16,6 +16,7 @@ module GaugeRubyExample
 		def product_list_page
 			GaugeRubyExample::Pages::ProductListPage.new
 		end
+
 	end
 end
 
@@ -28,8 +29,7 @@ end
 # Firefox 35 + Selenium has a bug - https://code.google.com/p/selenium/issues/detail?id=8390
 
 Capybara.register_driver :selenium do |app|
-  Capybara::Selenium::Driver.new(app, :browser => :chrome)
+  Capybara::Selenium::Driver.new(app, :browser => :firefox)
 end
 
 Capybara.default_driver = :selenium
-

@@ -4,7 +4,7 @@ module GaugeRubyExample
 			set_url "#{URL}customers/"
 
 			element :q_username, "#q_username"
-			element :q_submit, "#q_submit"
+			element :q_submit, "#commit"
 			element :usernameResult, "table#customers tbody tr:nth-child(1) td.username"
 
 			def search_user(username)

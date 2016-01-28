@@ -4,7 +4,7 @@ module GaugeRubyExample
 			set_url "#{URL}products/"
 
 			element :q_title, "#q_title"
-			element :q_submit, "#q_submit"
+			element :q_submit, "input[name='commit']"
 			element :firstProduct, "#main_content table tbody tr:nth-child(1) td.product a"
 
 			def search(name)

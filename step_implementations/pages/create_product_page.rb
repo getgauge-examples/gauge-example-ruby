@@ -7,7 +7,7 @@ module GaugeRubyExample
 			element :product_description, '#product_description'
 			element :product_author, '#product_author'
 			element :product_price, '#product_price'
-			element :product_submit, '#product_submit'
+			element :product_submit, '#main_content fieldset.actions input[name=commit]'
 			element :product_image_file_name, '#product_image_file_name'
 
 			def create(title, desc, author, price)
