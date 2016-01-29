@@ -14,6 +14,7 @@ module GaugeRubyExample
 
 			def delete
 				delete_button.click
+				page.driver.browser.switch_to.alert.accept
 			end
 
 			def verify_attribute(specifier, value)
