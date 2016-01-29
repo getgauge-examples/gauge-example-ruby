@@ -18,3 +18,7 @@ step "Search for customers <table>" do |table|
 		customer_page.verify_user_listed row.first
 	}
 end
+
+step "Just registered customer is listed" do
+	customer_page.verify_user_listed Gauge::DataStoreFactory.scenario_datastore.get "current_user"
+end

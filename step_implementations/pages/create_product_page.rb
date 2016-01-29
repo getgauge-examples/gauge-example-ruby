@@ -1,7 +1,7 @@
 module GaugeRubyExample
 	module Pages
 		class CreateProductPage < BasePage
-			set_url "#{URL}products/new"
+			set_url "#{ADMIN_URL}products/new"
 
 			element :product_title, '#product_title'
 			element :product_description, '#product_description'

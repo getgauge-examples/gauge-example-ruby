@@ -7,6 +7,7 @@ module GaugeRubyExample
 			include Test::Unit::Assertions
 
 			URL = ENV["APP_ENDPOINT"]
+			ADMIN_URL = "#{URL}admin/"
 		end
 	end
 end

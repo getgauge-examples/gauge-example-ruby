@@ -17,6 +17,9 @@ module GaugeRubyExample
 			GaugeRubyExample::Pages::ProductListPage.new
 		end
 
+		def sign_up_page
+			GaugeRubyExample::Pages::SignUpPage.new
+		end
 	end
 end
 

@@ -1,7 +1,7 @@
 module GaugeRubyExample
 	module Pages
 		class ProductListPage < BasePage
-			set_url "#{URL}products/"
+			set_url "#{ADMIN_URL}products/"
 
 			element :q_title, "#q_title"
 			element :q_submit, "input[name='commit']"
