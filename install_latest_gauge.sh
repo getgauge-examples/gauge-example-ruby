@@ -5,7 +5,7 @@ GAUGE_LATEST_VERSION=`echo $GAUGE_LATEST | sed 's/.*\/v//'`
 BIT=`uname -m`
 
 if [ "$BIT"=="x86_64" ];
-then 
+then
 	GAUGE_FILE_NAME="gauge-$GAUGE_LATEST_VERSION-linux.x86_64.zip"
 else
 	GAUGE_FILE_NAME="gauge-$GAUGE_LATEST_VERSION-linux.x86.zip"
@@ -21,4 +21,4 @@ unzip $GAUGE_FILE_NAME -d $OUTPUT_DIR
 
 cd $OUTPUT_DIR
 
-/bin/bash install.sh
+/bin/bash install.sh $1
