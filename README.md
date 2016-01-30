@@ -1,10 +1,8 @@
 # Gauge example project, in Ruby
 
 [![Build Status](https://snap-ci.com/getgauge/gauge-example-ruby/branch/master/build_image)](https://snap-ci.com/getgauge/gauge-example-ruby/branch/master)
-
-###Last Run Reports (Powered by [Snap CI](https://snap-ci.com/))
-- [Console](https://gauge-reports-ruby.herokuapp.com/console)
-- [Html](https://gauge-reports-ruby.herokuapp.com/)
+[![HTML report](https://img.shields.io/badge/report-html-green.svg)](http://gauge-example-reports.herokuapp.com/ruby)
+[![Console report](https://img.shields.io/badge/report-console-blue.svg)](http://gauge-example-reports.herokuapp.com/ruby/console)
 
 This project serves as an example for writing Automation using [Gauge](https://github.com/getgauge/gauge)
 
@@ -23,8 +21,8 @@ This project uses
 - [Table driven execution](http://getgauge.io/documentation/user/current/execution/table_driven_execution.html)
 - [External datasource (special param)](http://getgauge.io/documentation/user/current/specifications/parameters.html#special-parameters)
 
-
 # Prerequisites
+- [Java 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). [Required to bring up the [SUT](#setting-up-the-system-under-test-sut)
 - [Install Gauge](http://getgauge.io/download.html)
   - Homebrew on Mac OS X :  
       ```
@@ -36,6 +34,16 @@ This project uses
   gauge --install ruby
   ```
 - Chromedriver, for Capybara to interact with Chrome. Make sure that the [Chrome driver executable](https://sites.google.com/a/chromium.org/chromedriver/downloads) is available in your PATH.
+
+## Setting up the System Under Test (SUT)
+
+* Download [activeadmin-demo.war](https://bintray.com/artifact/download/gauge/activeadmin-demo/activeadmin-demo.war)
+* Bring up the SUT by executing the below command
+```
+java -jar activeadmin-demo.war
+```
+* The SUT should now be available at [http://localhost:8080/](http://localhost:8080)
+
 
 # Executing specs
 
