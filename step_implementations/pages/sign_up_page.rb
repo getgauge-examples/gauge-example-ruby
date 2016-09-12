@@ -1,6 +1,6 @@
 module GaugeRubyExample
-	module Pages
-		class SignUpPage < BasePage
+  module Pages
+    class SignUpPage < BasePage
       set_url "#{URL}signup/"
 
       element :username, "#user_username"
