@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 require_relative 'spec_helper.rb'
 
 step 'On signup page' do
