@@ -1,4 +1,6 @@
+env/local/
 logs/
 reports/
+.gauge/
 *.log
 .DS_Store

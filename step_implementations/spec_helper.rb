@@ -1,6 +1,6 @@
-require_relative "./pages/base_page.rb"
-Dir[File.join(File.dirname(__FILE__), './pages/*.rb')].each {|file| require file }
-
+# frozen_string_literal: true
+require_relative './pages/base_page.rb'
+Dir[File.join(File.dirname(__FILE__), './pages/*.rb')].each { |file| require file }
 
 # Define your helpers...
 module GaugeRubyExample
@@ -32,7 +32,7 @@ end
 # Firefox 35 + Selenium has a bug - https://code.google.com/p/selenium/issues/detail?id=8390
 
 Capybara.register_driver :selenium do |app|
-  Capybara::Selenium::Driver.new(app, :browser => :firefox)
+  Capybara::Selenium::Driver.new(app, browser: :firefox)
 end
 
 Capybara.default_driver = :selenium
