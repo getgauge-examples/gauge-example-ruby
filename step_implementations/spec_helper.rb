@@ -32,7 +32,7 @@ end
 # Firefox 35 + Selenium has a bug - https://code.google.com/p/selenium/issues/detail?id=8390
 
 Capybara.register_driver :selenium do |app|
-  Capybara::Selenium::Driver.new(app, browser: :firefox)
+  Capybara::Selenium::Driver.new(app, browser: :chrome)
 end
 
 Capybara.default_driver = :selenium
