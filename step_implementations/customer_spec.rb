@@ -15,8 +15,8 @@ end
 
 step 'Search for customers <table>' do |table|
   table.rows.each do |row|
-    customer_page.search_user row.first
-    customer_page.verify_user_listed row.first
+    customer_page.search_user row[0]
+    customer_page.verify_user_listed row[0]
   end
 end
 
