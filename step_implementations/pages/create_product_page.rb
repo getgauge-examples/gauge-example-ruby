@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module GaugeRubyExample
   module Pages
     class CreateProductPage < BasePage
@@ -15,7 +16,7 @@ module GaugeRubyExample
         product_description.set desc
         product_author.set author
         product_price.set price
-        product_image_file_name.set "not available"
+        product_image_file_name.set 'not available'
         product_submit.click
       end
     end
