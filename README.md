@@ -1,6 +1,6 @@
 # Gauge example project, in Ruby
 
-[![Build Status](https://snap-ci.com/getgauge/gauge-example-ruby/branch/master/build_image)](https://snap-ci.com/getgauge/gauge-example-ruby/branch/master)
+[![Build Status](https://travis-ci.org/getgauge/gauge-example-ruby.svg?branch=master)](https://travis-ci.org/getgauge/gauge-example-ruby)
 [![HTML report](https://img.shields.io/badge/report-html-green.svg)](http://gauge-example-reports.herokuapp.com/ruby)
 [![Console report](https://img.shields.io/badge/report-console-blue.svg)](http://gauge-example-reports.herokuapp.com/ruby/console)
 
