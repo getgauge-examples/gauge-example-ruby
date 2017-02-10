@@ -64,4 +64,4 @@ bundle exec gauge specs
 This will also compile all the supporting code implementations.
 
 # Copyright
-Copyright 2016, ThoughtWorks Inc.
+Copyright 2017, ThoughtWorks Inc.
