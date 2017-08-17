@@ -4,3 +4,5 @@ reports/
 .gauge/
 *.log
 .DS_Store
+vendor/
+.vscode
