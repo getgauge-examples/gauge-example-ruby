@@ -34,6 +34,7 @@ tags: admin, product, edit
 Delete a product
 ----------------
 tags: admin, product, delete
-The below concept is an example of nested concept, check out the definition.
 
+* This is an example of a scenario WIP
+The below concept is an example of nested concept, check out the definition.
 * Delete product "Learning Go"
