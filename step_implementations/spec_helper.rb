@@ -35,8 +35,8 @@ end
 # This runs selenium in headless mode.
 Capybara.register_driver :selenium do |app|
   options = Selenium::WebDriver::Chrome::Options.new
-  options.add_argument('--headless')
-  options.add_argument('--disable-gpu')  
+  
+  options.add_argument('--disable-gpu')
 
   Capybara::Selenium::Driver.new app,
     browser: :chrome,
