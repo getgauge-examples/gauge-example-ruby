@@ -6,7 +6,7 @@ Refer https://github.com/getgauge-examples/ruby-selenium and our [blog](https://
 
 # Gauge example project, in Ruby
 
-[![Build Status](https://travis-ci.org/getgauge/gauge-example-ruby.svg?branch=master)](https://travis-ci.org/getgauge/gauge-example-ruby)
+[![Build Status](https://travis-ci.org/getgauge-examples/gauge-example-ruby.svg?branch=master)](https://travis-ci.org/getgauge-examples/gauge-example-ruby)
 [![HTML report](https://img.shields.io/badge/report-html-green.svg)](http://gauge-example-reports.herokuapp.com/ruby)
 [![Console report](https://img.shields.io/badge/report-console-blue.svg)](http://gauge-example-reports.herokuapp.com/ruby/console)
 
