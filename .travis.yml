@@ -31,7 +31,6 @@ install:
   - unzip ~/Downloads/chromedriver_linux64.zip -d ~/Downloads
   - chmod +x ~/Downloads/chromedriver
   - sudo mv -f ~/Downloads/chromedriver /usr/bin/chromedriver
-  - Xvfb :0 -ac -screen 0 1024x768x24 &
   - curl localhost:8080
 
 script:
