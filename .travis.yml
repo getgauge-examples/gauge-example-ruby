@@ -1,26 +1,44 @@
 os:
   - linux
 language: ruby
-before_install: 
-  - ./install_latest_gauge.sh /tmp >/dev/null 2>&1
-  - source ~/.profile
-  - gauge --install ruby
-  - bundle install
-  - wget https://bintray.com/artifact/download/gauge/activeadmin-demo/activeadmin-demo.war
-  - nohup java -jar activeadmin-demo.war >/dev/null 2>&1 &
+sudo: required
+dist: trusty
+
+addons:
+  apt:
+    sources:
+    - google-chrome
+    packages:
+    - google-chrome-stable
+  packages:
+    - unzip
+    - libappindicator1 
+    - fonts-liberation
+    - xvfb
+before_install:
+  - docker pull loyaltyone/docker-alpine-java-node
+  - wget `curl -s https://api.github.com/repos/getgauge-examples/activeadmin-demo/releases/latest | grep browser_download_url | cut -d '"' -f 4`
+  - docker run -d -v=`pwd`:$HOME/host -p 127.0.0.1:8080:8080 loyaltyone/docker-alpine-java-node java -jar $HOME/host/activeadmin-demo.war
+  - docker ps -a
   - sleep 30
-  - sudo apt-get install unzip
-  - wget -N http://chromedriver.storage.googleapis.com/2.9/chromedriver_linux64.zip -P ~/Downloads
+  - npm install --global surge
+install:
+  - sh ./install_latest_gauge.sh /tmp
+  - source ~/.profile
+  - gauge install ruby
+  - bundle install
+  - wget -N http://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip -P ~/Downloads
   - unzip ~/Downloads/chromedriver_linux64.zip -d ~/Downloads
   - chmod +x ~/Downloads/chromedriver
   - sudo mv -f ~/Downloads/chromedriver /usr/bin/chromedriver
-install:  
-  - bundle exec gauge specs
-  - heroku maintenance:on --app gauge-example-reports
-  - heroku git:clone -a gauge-example-reports
-  - cd gauge-example-reports
-  - cp -rf ../reports/html-report/* ruby/public
-  - git add .
-  - git commit -m "update Ruby reports for build ${SNAP_PIPELINE_COUNTER}"
-  - git push heroku master
-  - heroku maintenance:off --app gauge-example-reports
+  - Xvfb :0 -ac -screen 0 1024x768x24 &
+  - curl localhost:8080
+
+script:
+  - headless=Y bundle exec gauge specs
+
+deploy:
+  provider: surge
+  project: ./reports/html-report/
+  domain: gauge-example-ruby-selenium.surge.sh
+  skip_cleanup: true
