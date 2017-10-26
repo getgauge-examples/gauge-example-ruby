@@ -35,7 +35,7 @@ install:
   - curl localhost:8080
 
 script:
-  - headless=Y bundle exec gauge specs
+  - headless=Y bundle exec gauge run specs
 
 deploy:
   provider: surge
