@@ -37,7 +37,7 @@ This project uses
   - [Download Installer](http://getgauge.io/get-started/index.html)
 - [Install Gauge-Ruby plugin](http://getgauge.io/documentation/user/current/installations/install_plugins.html) by running<br>
   ```
-  gauge --install ruby
+  gauge install ruby
   ```
 - Chromedriver, for Capybara to interact with Chrome. Make sure that the [Chrome driver executable](https://sites.google.com/a/chromium.org/chromedriver/downloads) is available in your PATH.
 
@@ -65,7 +65,7 @@ bundle install
 
 ### All specs
 ````
-bundle exec gauge specs
+bundle exec gauge run specs
 ````
 This will also compile all the supporting code implementations.
 
