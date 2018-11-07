@@ -7,8 +7,6 @@ Refer https://github.com/getgauge-examples/ruby-selenium and our [blog](https://
 # Gauge example project, in Ruby
 
 [![Build Status](https://travis-ci.org/getgauge-examples/gauge-example-ruby.svg?branch=master)](https://travis-ci.org/getgauge-examples/gauge-example-ruby)
-[![HTML report](https://img.shields.io/badge/report-html-green.svg)](http://gauge-example-reports.herokuapp.com/ruby)
-[![Console report](https://img.shields.io/badge/report-console-blue.svg)](http://gauge-example-reports.herokuapp.com/ruby/console)
 
 This project serves as an example for writing Automation using [Gauge](http://getgauge.io)
 
@@ -48,7 +46,7 @@ This project uses
 ```
 java -jar activeadmin-demo.war
 ```
-* The SUT should now be available at [http://localhost:8080/](http://localhost:8080)
+* The SUT should now be available at http://localhost:8080
 
 
 # Executing specs
