@@ -32,7 +32,7 @@ This project uses
       brew install gauge
       ```
   - [Download Installer](http://getgauge.io/get-started/index.html)
-- [Install Gauge-Ruby plugin](http://getgauge.io/documentation/user/current/installations/install_plugins.html) by running<br>
+- [Install Gauge-Ruby plugin](https://gauge.org/plugins/) by running<br>
   ```
   gauge install ruby
   ```
