@@ -20,11 +20,10 @@ This project uses
 # Concepts covered
 
 - Use [Webdriver](http://docs.seleniumhq.org/projects/webdriver/) as base of implementation
-- [Concepts](http://getgauge.io/documentation/user/current/gauge_terminologies/concepts.html)
-- [Specification](http://getgauge.io/documentation/user/current/gauge_terminologies/specifications.html), [Scenario](http://getgauge.io/documentation/user/current/gauge_terminologies/scenarios.html) & [Step](http://getgauge.io/documentation/user/current/gauge_terminologies/steps.html) usage
-- [Table driven execution](http://getgauge.io/documentation/user/current/advanced_readings/execution_types/table_driven_execution.html)
-- [External datasource (special param)](http://getgauge.io/documentation/user/current/gauge_terminologies/parameters/special_parameters.html)
-
+- [Concepts](https://docs.gauge.org/latest/writing-specifications.html#concepts)
+* [Specification](https://docs.gauge.org/latest/writing-specifications.html#specifications-spec), [Scenario](https://docs.gauge.org/latest/writing-specifications.html#scenario) and [Step](https://docs.gauge.org/latest/writing-specifications.html#step)
+* [Table parameters](https://docs.gauge.org/latest/writing-specifications.html#table-parameters)
+* Using [External datasource (special param)](https://docs.gauge.org/latest/writing-specifications.html#special-parameters)
 # Prerequisites
 - [Java 1.7 or above](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). [Required to bring up the [SUT](#setting-up-the-system-under-test-sut)]
 - [Install Gauge](http://getgauge.io/get-started/index.html)
