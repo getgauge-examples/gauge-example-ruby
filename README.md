@@ -26,7 +26,7 @@ This project uses
 * Using [External datasource (special param)](https://docs.gauge.org/latest/writing-specifications.html#special-parameters)
 # Prerequisites
 - [Java 1.7 or above](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). [Required to bring up the [SUT](#setting-up-the-system-under-test-sut)]
-- [Install Gauge](http://getgauge.io/get-started/index.html)
+- [Install Gauge](https://docs.gauge.org/getting_started/installing-gauge.html)
   - Homebrew on Mac OS X :  
       ```
       brew install gauge
