@@ -97,7 +97,7 @@ GEM
     procto (0.0.3)
     public_suffix (3.0.2)
     racc (1.5.2)
-    rack (2.0.8)
+    rack (2.2.3)
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
     rainbow (3.0.0)
