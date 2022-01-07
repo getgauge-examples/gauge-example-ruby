@@ -51,7 +51,7 @@ GEM
       ruby-debug-ide (~> 0.6.0)
       ruby-protocol-buffers (= 1.5.1)
       unparser (~> 0.2.6)
-    google-protobuf (3.5.1.2)
+    google-protobuf (3.19.2)
     googleapis-common-protos-types (1.0.1)
       google-protobuf (~> 3.0)
     googleauth (0.6.2)
